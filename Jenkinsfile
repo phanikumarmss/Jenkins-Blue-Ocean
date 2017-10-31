@@ -7,5 +7,15 @@ pipeline {
         timeout(time: 15)
       }
     }
+    stage('Build2') {
+      steps {
+        sh 'echo Welcome2'
+      }
+    }
+    stage('End') {
+      steps {
+        sh 'echo end'
+      }
+    }
   }
 }
